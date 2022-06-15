@@ -1,0 +1,57 @@
+header {
+  background: var(--background-gradient);
+}
+
+header > div {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  z-index: 10;
+  margin: auto;
+}
+
+.logo img {
+  width: 6rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+}
+
+a {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+a.active, a:hover {
+  color: var(--text-primary);
+}
+
+
+.btn-connect {
+  border-radius: .2rem;
+  background: var(--green);
+  padding: 10px 22px;
+  color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color .2s ease;
+}
+
+.btn-connect:hover {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--text-primary);
+}
