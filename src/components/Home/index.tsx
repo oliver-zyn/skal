@@ -1,32 +1,37 @@
-import './style.css'
+import { Carousel } from 'react-responsive-carousel';
+
+import home01Img from '../../assets/home-01.png';
+import home02Img from '../../assets/home-02.jpg';
+import home03Img from '../../assets/home-03.jpg';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./style.css";
 
 export function Home() {
   return (
-    <section className='home'>
+    <section className="home">
       <div>
         <div className="title">
-          <span>Frase extra aqui</span>
-          <h1>We travel in the past to bring you the present</h1>
-          <p>Go to the next level with tokenized tickets! Enjoy your events like a real <span className='text-effect'>viking.</span></p>
+          <h1>
+            Tenha mais controle, segurança e liberdade na hora de criar os seus{" "}
+            <span className="text-effect">eventos</span>
+          </h1>
+          <p>Crie seus eventos usando ingressos tokenizados</p>
         </div>
-        <div className='form-connect'>
-          <div>
-            <h2>Sign in now</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-          </div>
-          <form>
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <button>Login</button>
+        <div className="carousel">
+          <Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showThumbs={false} showArrows={false}>
             <div>
-              <span className='line'></span>
-              <span>or</span>
-              <span className='line'></span>
+              <img src={home01Img} />
             </div>
-            <button>Connect Wallet</button>
-          </form>
+            <div>
+              <img src={home02Img} />
+            </div>
+            <div>
+              <img src={home03Img} />
+            </div>
+          </Carousel>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -15,7 +15,11 @@ export function Header() {
           <a href="#">RoadMap</a>
           <a href="#">Team</a>
         </nav>
-        <div>
+        <div className="header-buttons">
+          <div>
+            <span>PT</span>
+            <span>🇧🇷</span>
+          </div>
           <button className='btn-connect'>Connect Wallet</button>
         </div>
       </div>

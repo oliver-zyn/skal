@@ -1,9 +1,35 @@
 section.about {
   background: var(--background);
-  border-top: 1px solid #29292e;
+  border-bottom: 1px solid #29292e;
 }
 
 section.about > div {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0 5rem 0;
+  color: var(--text-primary);
+}
+
+section.about > div h2 {
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.8rem;
+  font-size: 1.8rem;
+}
+
+section.about > div h2::before {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid var(--green);
+  width: 100px;
+  left: 0;
+  bottom: 0;
+}
+
+section.about > div > p {
+  line-height: 1.6;
+  font-size: 1.1rem;
 }

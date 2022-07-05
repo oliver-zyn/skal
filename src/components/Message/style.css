@@ -1,0 +1,33 @@
+section.message {
+  background: var(--background);
+  border-top: 1px solid #29292e;
+}
+
+section.message > div {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+section.message > div > h2 {
+  font-weight: 500;
+}
+
+section.message > div > svg {
+  animation: animate-rocket 2s infinite alternate ease-in-out;
+}
+
+@keyframes animate-rocket {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}

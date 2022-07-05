@@ -3,13 +3,15 @@ section.home {
 }
 
 section.home > div {
-  max-width: 1000px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--text-primary);
-  gap: 5.9rem;
+  gap: 5.7rem;
   margin: 2rem auto;
+  flex-wrap: wrap;
+  padding: 4rem 0;
 }
 
 .title {
@@ -19,87 +21,27 @@ section.home > div {
   gap: .9rem;
 }
 
-.title > span {
-  color: var(--text-secondary);
-}
-
 .title h1 {
   font-size: 2.9rem;
+  font-weight: 500;
 }
 
 .text-effect {
   color: var(--green);
 }
 
-.form-connect {
+.carousel {
   flex: 1;
-  background: var(--background);
-  border-radius: .5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2rem;
-  gap: 1.4rem;
+  position: relative;
+  border-radius: .4rem;
+  box-shadow: 0 0 2px #ffffff2d, 0 0 10px #ffffff2d, 0 0 20px #5db12d11, 0 0 30px #5db12d11,
+    0 0 40px #5db12d11, 0 0 50px #5db12d11;
+  animation: blink 2s infinite alternate;
 }
 
-.form-connect div {
-  width: 100%;
-}
-
-.form-connect div p {
-  color: var(--text-secondary);
-  margin-top: .3rem;
-}
-
-.form-connect form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: .6rem;
-}
-
-.form-connect form input {
-  background: #171719;
-  border-radius: .2rem;
-  padding: 1rem;
-  border: none;
-  color: var(--text-primary);
-}
-
-.form-connect form input:focus {
-  transition: outline .2s;
-  outline: 1px solid var(--green);
-}
-
-.form-connect form button {
-  border-radius: .2rem;
-  background: var(--green);
-  padding: 10px 22px;
-  color: #fff;
-  border: 1px solid transparent;
-  outline: none;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color .2s ease;
-}
-
-.form-connect form div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.line {
-  display: block;
-  height: 1px;
-  width: 100%;
-  background: var(--text-secondary);
-}
-
-.form-connect form button:hover {
-  background-color: transparent;
-  border: 1px solid var(--green);
-  color: var(--text-primary);
+@keyframes blink {
+  100% {
+    box-shadow: 0 0 3px #ffffff2d, 0 0 10px #ffffff2d, 0 0 20px #ffffff2d, 0 0 40px #5db12d11,
+      0 0 70px #5db12d11, 0 0 80px #5db12d11;
+  }
 }

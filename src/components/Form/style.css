@@ -1,0 +1,72 @@
+.form-connect {
+  flex: 1;
+  background: var(--background);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.4rem;
+}
+
+.form-connect div {
+  width: 100%;
+}
+
+.form-connect div p {
+  color: var(--text-secondary);
+  margin-top: .3rem;
+}
+
+.form-connect form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .6rem;
+}
+
+.form-connect form input {
+  background: #171719;
+  border-radius: .2rem;
+  padding: 1rem;
+  border: none;
+  color: var(--text-primary);
+}
+
+.form-connect form input:focus {
+  transition: outline .2s;
+  outline: 1px solid var(--green);
+}
+
+.form-connect form button {
+  border-radius: .2rem;
+  background: var(--green);
+  padding: 10px 22px;
+  color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color .2s ease;
+}
+
+.form-connect form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: var(--text-secondary);
+}
+
+.form-connect form button:hover {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--text-primary);
+}

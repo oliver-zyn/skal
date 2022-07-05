@@ -1,0 +1,43 @@
+section.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 0;
+  color: var(--text-primary);
+}
+
+.card {
+  background: #0d0d0e;
+  border: 1px solid #29292e;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card svg {
+  color: var(--green);
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

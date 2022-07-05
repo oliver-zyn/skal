@@ -1,7 +1,7 @@
 :root {
   --green: #5db12d;
-  --text-primary: #fafafa;
-  --text-secondary: #848386;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a8a8b3;
 
   --background: #121214;
   --background-gradient: linear-gradient(270deg, #060A08 0%, #121214 100%);
@@ -46,9 +46,12 @@ button {
   cursor: not-allowed;
 }
 
-.App {
-  /* max-width: 1350px; */
-  width: 100%;
-  margin: auto;
-  /* padding: 0.5rem calc((100vw - 1000px) / 2); */
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+  border-radius: 20px;
 }
