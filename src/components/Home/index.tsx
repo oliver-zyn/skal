@@ -9,7 +9,7 @@ import "./style.css";
 
 export function Home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div>
         <div className="title">
           <h1>

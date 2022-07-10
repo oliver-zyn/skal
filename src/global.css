@@ -5,6 +5,8 @@
 
   --background: #121214;
   --background-gradient: linear-gradient(270deg, #060A08 0%, #121214 100%);
+
+  --border-color: #29292e;
 }
 
 * {
@@ -13,7 +15,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body, * {
   @media (max-width: 1080px) {
       font-size: 93.75%;
   }

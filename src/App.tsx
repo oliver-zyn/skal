@@ -5,6 +5,7 @@ import { Message } from './components/Message'
 import { About } from './components/About'
 import { Roadmap } from './components/Roadmap'
 import { Updates } from './components/Updates'
+import { Footer } from './components/Footer'
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <About />
       <Roadmap />
       <Updates />
+      <Footer />
     </div>
   )
 }

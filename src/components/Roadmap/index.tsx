@@ -5,7 +5,7 @@ import "./style.css";
 
 export function Roadmap() {
   return (
-    <section className="roadmap">
+    <section className="roadmap" id="roadmap">
       <div>
         <h2>Roadmap</h2>
         <Tabs className="tabs-roadmap">

@@ -11,7 +11,7 @@ section.home > div {
   gap: 5.7rem;
   margin: 2rem auto;
   flex-wrap: wrap;
-  padding: 4rem 0;
+  padding: 4rem 1.2rem;
 }
 
 .title {
@@ -43,5 +43,11 @@ section.home > div {
   100% {
     box-shadow: 0 0 3px #ffffff2d, 0 0 10px #ffffff2d, 0 0 20px #ffffff2d, 0 0 40px #5db12d11,
       0 0 70px #5db12d11, 0 0 80px #5db12d11;
+  }
+}
+
+@media (max-width: 768px) {
+  section.home > div {
+    flex-direction: column;
   }
 }

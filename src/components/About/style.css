@@ -1,6 +1,6 @@
 section.about {
   background: var(--background);
-  border-bottom: 1px solid #29292e;
+  border-bottom: 1px solid var(--border-color);
 }
 
 section.about > div {
@@ -9,7 +9,7 @@ section.about > div {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem 0 5rem 0;
+  padding: 1rem 1.2rem 5rem;
   color: var(--text-primary);
 }
 
